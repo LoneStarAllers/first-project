@@ -47,3 +47,13 @@ def histogram(items):
 histogram([3,6,4,3,6,5])
 
 #################################
+
+def ages(**kwargs):
+    return kwargs
+
+Dic = ages(Nick=31, Chris=27, Alicia=32, Maddison=55, Travis=57)
+for person, age in Dic.items():
+    print("{} is {} years old".format(person, age))
+
+#################################
+
