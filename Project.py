@@ -92,3 +92,10 @@ print("Result is : ")
 for i in range(1,n+1):
     print(fibo(i),end=' ')
 
+#################################
+
+def midlle_item(*args):
+
+    return args[len(args) // 2]
+
+print(midlle_item('red', 'green', 'blue', 'purpel', 'yellow'))
