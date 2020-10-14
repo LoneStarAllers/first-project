@@ -82,3 +82,13 @@ print(fact(int(input("Enter a number : "))))
 
 #################################
 
+def fibo(n):
+    if n == 1 or n == 2:
+        return 1
+    return fibo(n-1) + fibo(n-2)
+
+n = int(input("Enter n : "))
+print("Result is : ")
+for i in range(1,n+1):
+    print(fibo(i),end=' ')
+
