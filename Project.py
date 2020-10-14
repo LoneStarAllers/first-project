@@ -23,3 +23,15 @@ print(vowels_counter(s))
 
 #################################
 
+def Everyone(*args):
+    List = []
+    for i in args:
+        List.append(i)
+    
+    return List
+
+Persons = Everyone('Parham', 'Amin', 'Amir', 'Roohollah', 'Omid', 'nafiseh', 'Mohammadreza', 'Aryan')
+for person in Persons:
+    print("Hello " + person)
+
+#################################
