@@ -99,3 +99,14 @@ def midlle_item(*args):
     return args[len(args) // 2]
 
 print(midlle_item('red', 'green', 'blue', 'purpel', 'yellow'))
+
+#################################
+
+def degree_to_radian(degree):
+    pi = 22/7
+    radian = degree * (pi / 180)
+
+    return "Radian equivalent to the degree {} is {}".format(degree,radian)
+
+degree = float(input("Input a degree : "))
+print(degree_to_radian(degree))
