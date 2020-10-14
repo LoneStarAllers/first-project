@@ -70,3 +70,15 @@ m = int(input("Enter m : "))
 print("{} has repeated {} times in {}".format(m,repeat(n,m),n))
 
 #################################
+
+def fact(n):
+    f = 1
+    # for i in range(1,n+1): if we want to go from 1 to n
+    for i in range(n,1,-1):
+        f *= i
+    return f
+
+print(fact(int(input("Enter a number : "))))
+
+#################################
+
