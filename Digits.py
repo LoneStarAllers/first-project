@@ -4,7 +4,7 @@ def sumdigits(n):
     else:
         temp = n # temp variable saves the main number
         Sum = 0
-        digit_count = 0 # the variable to track the number of digits in the number
+        digit_count = 0 # the variable to keep track the number of digits in the number
         while temp > 0:
             digit_count += 1
             Sum += temp % 10
