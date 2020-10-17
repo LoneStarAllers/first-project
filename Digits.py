@@ -2,13 +2,12 @@ def sumdigits(n):
     if n < 10:
         return n
     else:
-        temp = n # temp variable saves the main number
         Sum = 0
         digit_count = 0 # the variable to keep track the number of digits in the number
-        while temp > 0:
+        while n > 0:
             digit_count += 1
-            Sum += temp % 10
-            temp //= 10
+            Sum += n % 10
+            n //= 10
         n = Sum # main number update
         if digit_count > 1:
             return sumdigits(n) # recursion happens based on the condition
